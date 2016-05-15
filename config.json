@@ -1,0 +1,28 @@
+{
+  "publicDir": "public/",
+  "browserSync": {
+    "proxy": "http://localhost:3000",
+    "port": "5000"
+  },
+  "sass": {
+    "import": "import.scss",
+    "mainOutputFile": "style.css",
+    "minOutputFile": "style.min.css",
+    "export": "stylesheets/",
+    "dir": "./sass/"
+  },
+  "js": {
+    "import": "import.js",
+    "mainOutputFile": "script.js",
+    "minOutputFile": "script.min.js",
+    "export": "javascripts/",
+    "dir": "./javascripts/"
+  },
+  "gulpTasks": {
+    "sass": "sass",
+    "javascripts": "js",
+    "browserSync": "browserSync",
+    "nodemon": "nodemon",
+    "watch": "watch"
+  }
+}
