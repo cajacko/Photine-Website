@@ -4,140 +4,8 @@
 		"selected_items":
 		[
 			[
-				"js",
-				"json_encode"
-			],
-			[
-				"str_re",
-				"str_replace"
-			],
-			[
-				"json",
-				"json_variables"
-			],
-			[
-				"document",
-				"documentHeight"
-			],
-			[
-				"array_re",
-				"array_reverse"
-			],
-			[
-				"gray",
-				"gray--dark"
-			],
-			[
-				"font-",
-				"font-style"
-			],
-			[
-				"i",
-				"iconFontSize"
-			],
-			[
-				"inline",
-				"inline-block"
-			],
-			[
-				"font-s",
-				"font-size"
-			],
-			[
-				"padd",
-				"padding"
-			],
-			[
-				"fon",
-				"fontFamily"
-			],
-			[
-				"pad",
-				"padding"
-			],
-			[
-				"siteFoo",
-				"siteFooterHeight"
-			],
-			[
-				"di",
-				"display"
-			],
-			[
-				"paddin",
-				"paddingD4"
-			],
-			[
-				"table",
-				"table-cell"
-			],
-			[
-				"row",
-				"row_value"
-			],
-			[
-				"new",
-				"new_height"
-			],
-			[
-				"max",
-				"max_height"
-			],
-			[
-				"max_",
-				"max_width"
-			],
-			[
-				"as",
-				"aspect_ratio"
-			],
-			[
-				"mob",
-				"mobileNavSpacing"
-			],
-			[
-				"label",
-				"labelMargin"
-			],
-			[
-				"hea",
-				"header	Tag"
-			],
-			[
-				"side",
-				"sidebar-container"
-			],
-			[
-				"fade",
-				"fadeOut	.fadeOut()"
-			],
-			[
-				"windo",
-				"windowHeight"
-			],
-			[
-				"wra",
-				"wrapMaxWidth"
-			],
-			[
-				"las",
-				"lastScrollTop"
-			],
-			[
-				"bottom",
-				"bottomGap"
-			],
-			[
-				"top",
-				"topGap"
-			],
-			[
-				"sideba",
-				"sidebarWidth"
-			],
-			[
-				"rea",
-				"relative"
+				"in",
+				"inline"
 			]
 		]
 	},
@@ -151,24 +19,40 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "",
+		"height": 146.0,
+		"last_filter": "install",
 		"selected_items":
 		[
 			[
-				"snipp",
-				"Snippet: @media"
+				"install",
+				"Package Control: Install Package"
 			],
 			[
-				"install",
+				"ASP",
+				"Set Syntax: ASP"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"instak",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 529.0
+		"width": 472.0
 	},
 	"console":
 	{
-		"height": 126.0,
+		"height": 125.0,
 		"history":
 		[
 			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
@@ -185,146 +69,51 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/charlie/Documents/Code/Projects/Photine/Website"
+		"/C/Data/Personal/photine-website"
 	],
 	"file_history":
 	[
-		"/Users/charlie/Desktop/workflow.js",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/action.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/sitemap.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/config.ini",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/header.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/config.json",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/helpers/post_formatting.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/package.json",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/sitemap.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/javascripts/import.jsx",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/config-sample.ini",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/javascripts/modules/google_tag_manager.js",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/javascripts/modules/fit_to_parent.jsx",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/javascripts/modules/lazy_load.jsx",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/.gitignore",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/gulpfile.js",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/config-sample.json",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/javascripts/modules/infinite_scroll.jsx",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/js/twitter.min.js",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/app.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/index.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/javascripts/twitter.js",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/modules/_post.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/helpers/process_image_meta.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/featured_image.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/categories.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/categories.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/posts/wedding-tips.html",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/.htaccess",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/404.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/posts.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/index.html",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/helpers/post_meta.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/post.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/image.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/site_navigation.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/twitter.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/twitter.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/modules/_sidebar.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/modules/_banner.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/modules/_general.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/temp.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/search.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/home.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/global.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/post.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/templates/sitemap.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/templates/categories.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/sidebar.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/search.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/banner.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/sidebar.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/helpers/get_date_diff.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/modules/_variables.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/helpers/bunting.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/modules/_site_navigation.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/javascripts/modules/site_nav.jsx",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/site_navigation.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/import.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/icons/illustrator/cancel.svg",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/fonts/fontello.svg",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/fonts/test.svg",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/modules/_sitemap.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/speed-test.html",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/footer.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/modules/_bunting.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/modules/_breadcrumbs.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/robots.txt",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/modules/_fonts.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/js/script.js",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/node_modules/gulp-sass-import-json/lib/json-to-sass.js",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/node_modules/gulp-sass-import-json/index.js",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/fonts/fontawesome-webfont.svg",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/helpers/minify_classes.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/bunting.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/scripts/minify_classes.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/js/script.min.js",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/styles/style.min.css",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/styles/style.css",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Live/wp-config.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/styles/modules/_mixins.scss",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/.sass-lint.yml",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/js/modernizr.js",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/post.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/tag.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/category.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/page.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/tags.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/tags.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/404.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/tag.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/category.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/tags.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/categories.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/templates/tags.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/home.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/templates/404.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/page.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/no_posts.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/no_more_posts.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/routes/loop.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/templates/home.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/loop.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/social_navigation.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/post_loop.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/page.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/templates/page.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/templates/single_post.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/pagination.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/templates/404.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/templates/loop.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/sublayouts/related_posts.twig",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/views/templates/loop.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/models/database.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/javascripts/import.js",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/javascripts/modules/general.js",
-		"/Users/charlie/Library/Application Support/Sublime Text 3/Packages/User/JavaScript.sublime-settings",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/.jscsrc",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/public/index.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/config.php",
-		"/Users/charlie/Library/Application Support/Sublime Text 3/Packages/User/SCSS.sublime-settings",
-		"/Users/charlie/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/.jshintrc",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/.csscomb.json",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Front End/composer.json",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Live/wp-content/themes/vikibell/post-formats/content.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Live/wp-content/themes/vikibell/functions/general.php",
-		"/Users/charlie/Documents/Code/Projects/Viki Bell/Blog/Live/wp-content/themes/vikibell/post-formats/content-video.php"
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/wamp/bin/apache/apache2.4.9/conf/extra/httpd-vhosts.conf",
+		"/C/Data/TaylorWimpey/prototype/prototype/trunk/source/.htaccess",
+		"/C/wamp/wampmanager.tpl",
+		"/C/Data/Personal/cornucopia/wordpress/index.php",
+		"/C/inetpub/wwwroot/iisstart.htm",
+		"/C/Data/test/index.php",
+		"/C/wamp/bin/apache/apache2.4.9/conf/httpd.conf",
+		"/C/Data/Personal/index.php",
+		"/C/Data/BMI/build/bmi_build/BMI/Presentation.Web/Sublayouts/Spotlights/CosmeticBodyMap.ascx",
+		"/C/Data/BMI/build/bmi_build/BMI/Presentation.Web/Sublayouts/Spotlights/BodyMap.ascx",
+		"/C/Users/charlie.jackson/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Data/BMI/build/bmi_build/BMI/Presentation.Web/Sublayouts/Spotlights/AccordionWrapper.ascx",
+		"/C/Data/BMI/build/bmi_build/BMI/Presentation.Web/_lib/scss/_universal.scss",
+		"/C/Data/BMI/build/bmi_build/BMI/Presentation.Web/_lib/js/main.js",
+		"/C/Data/BMI/build/bmi_build/BMI/Presentation.Web/_lib/js/build.js",
+		"/C/Data/BMI/build/bmi_build/BMI/Presentation.Web/Sublayouts/PageTypes/MyAppointments.ascx",
+		"/C/Users/charlie.jackson/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Data/BMI/build/bmi_build/BMI/Presentation.Web/Sublayouts/Spotlights/EmailPreferencesSpotlight.ascx",
+		"/C/Data/BMI/build/bmi_build/BMI/Presentation.Web/_lib/css/style.css",
+		"/C/Users/charlie.jackson/AppData/Roaming/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/C/Data/BMI/build/bmi_build/BMI/Presentation.Web/Export/Appointment.aspx",
+		"/C/Data/LIA/prototype/app/scss/_styles.scss",
+		"/C/Data/LIA/prototype/app/scss/main.scss",
+		"/C/Data/LIA/prototype/app/js/main.js",
+		"/C/Data/LIA/prototype/app/contact.html",
+		"/C/Users/charlie.jackson/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/C/Users/charlie.jackson/Documents/test.php",
+		"/C/Users/charlie.jackson/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/charlie.jackson/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
+		"/C/Users/charlie.jackson/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/charlie.jackson/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Data/Sublime Projects/LIA/Prototype/LIA Prototype.sublime-project"
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
-		"height": 106.0,
+		"height": 104.0,
 		"where_history":
 		[
 			""
@@ -335,102 +124,64 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"variables",
-			"]",
-			"[",
-			"\"\n    \"",
-			"\n        \"",
-			"=",
-			"        ",
-			"]",
-			"[",
-			"</span>",
-			" </span>",
-			"<span class=\"s1\">",
-			"</p>",
-			"<p class=\"p1\">",
-			"role",
-			" )",
-			"( ",
-			"toggleSubNavMobile",
-			"icon",
-			"<glyph",
-			"tweet-text",
-			"tweet-date",
-			"clearfix",
-			" style=\"opacity: 1;\"",
-			"\"tweet\"",
-			"fa fa-",
-			"f0f5",
-			"Sitenav",
-			"hoverFunction",
-			".dot-",
-			"dot-",
-			"@brand-color-",
-			"global",
-			"config.",
-			"\n            ",
-			"\n              ",
-			" class=\".+?\"",
-			"@",
-			"' ); ?>",
-			"<?php echo home_url( '",
-			"<?php echo home_url(); ?>",
-			"media_fb_pic_id",
-			"sync",
-			"site",
-			"cross",
-			"html",
-			"storyWrap",
-			"br",
-			"timeout",
-			"z-inde",
-			"\"",
-			"3000",
-			"media_fb_pic_id",
-			"$row['fb_pic_id']",
-			"$mysqli",
-			"while",
-			"mysqli",
-			"width",
-			"returnImgPosition",
-			"google_add_media_to_db",
-			"importScripts",
-			"echo",
-			"$headerColour",
-			"inputSubmitGroup",
-			"input",
-			"homePa",
-			"siteNav",
-			"source",
-			"projects[project]",
-			"../../../../global/styles/",
-			"../../../../global/functions/",
-			"image",
-			"charliejackson",
-			"blog.charliejackson",
-			"save_post",
-			"$bitly",
-			"location",
-			"redirec",
-			"photo_of_the",
-			"site-navigation-item",
-			" ol",
-			"ol ",
-			"footer",
-			"margin-right",
-			"@font-size",
-			"wrapMaxWidthMin",
-			"@global-padding",
-			"wrapMaxWidth",
-			"max-width",
-			"wrapMaxWidth",
-			"width",
-			"sidebar-container",
-			"wrap-max-width",
-			"background",
-			"xip.io",
-			"featured-post"
+			"vikibell",
+			"b",
+			"bpc",
+			"pcc",
+			"frame",
+			"rememberwhen",
+			"rememberberwhen",
+			"eventine",
+			"frame",
+			"hee",
+			"80",
+			"http://localhost",
+			"80",
+			"HEE-LETB",
+			"local",
+			"pcc",
+			"<VirtualHost *:80>\n    DocumentRoot \"C:\\Data\\Personal\\drupal-8\" \n    ServerName drupal-8.local.com\n    <directory \"C:/Data/Personal/drupal-8/\">\n        Options Indexes FollowSymLinks\n        AllowOverride All\n                Order allow,deny\n                Allow from all\n                Require local\n    </directory>\n</VirtualHost>",
+			"input[type=\"Submit\"]",
+			".form input[type=\"Submit\"].cta-sec",
+			", .form input[type=\"Submit\"].cta-sec",
+			",.form input[type=\"Submit\"].cta-sec",
+			"input[type=\"Submit\"].cta-",
+			"input[type=\"Submit\"]",
+			"input[type=\"Submit\"].",
+			"input[type=\"Submit\"]",
+			"input[type=\"Submit\"].cta-sec",
+			"input[type=\"Submit\"]",
+			"dateTimePicker",
+			"console.log('click",
+			"console.log( 'click",
+			"console.log( 'mobile",
+			"console.log('mobile",
+			"goToNextSlide",
+			"bodyMapToolMobile",
+			"bodyMapSlider.goToNextSlide",
+			"slider",
+			"translate3d",
+			"translate3D",
+			"fadein",
+			"SectionAInputChange",
+			"female",
+			"body",
+			"<img class=\"bmt-img\"",
+			"gps",
+			"feature-sign-up",
+			"EmailPreferencesSpotlight",
+			"class=\"feature feature-sign-up\"",
+			"feature-sign-up",
+			"feature-mybmi-appointment-overview",
+			"min-height: 300px",
+			"feature-mybmi-appointment-overview .)",
+			"feature-mybmi-appointment-overview",
+			"bracket",
+			"EditingFormTable",
+			"EditingFormValue",
+			"checkbo",
+			"checkbox",
+			"check"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -438,41 +189,7 @@
 		"regex": false,
 		"replace_history":
 		[
-			"}",
-			"{",
-			"\",\n    \"",
-			"\"\n        \"",
-			"\": \"",
-			"        \"",
-			"\": [",
-			"\"",
-			"",
-			"\n",
-			"",
-			")",
-			"(",
-			"<path",
-			"Tweet-content",
-			"Tweet-date",
-			"u-clearFix",
-			"",
-			"\"Tweet\"",
-			"icon",
-			".Bunting-dot--",
-			"Bunting-dot--",
-			"$Bunting-item--colour",
-			"vars",
-			"global.config.",
-			"",
-			"$",
-			"",
-			"/",
-			"'",
-			"// echo",
-			"projectPath",
-			"",
-			"$url",
-			"wrapMaxWidthMin"
+			"8080"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -490,7 +207,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -527,7 +244,7 @@
 	"project": "photine-website.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -536,6 +253,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"Sublayouts\\PageTypes\\MyAppointments.ascx"
+			],
+			[
+				"sublayouts/my",
+				"Sublayouts\\PageTypes\\MyAppointments.ascx"
+			],
+			[
+				"appo",
+				"Export\\Appointment.aspx"
+			]
 		],
 		"width": 0.0
 	},
@@ -547,11 +276,31 @@
 		[
 			[
 				"viki",
-				"~/Documents/Code/Projects/Viki Bell/Blog/Live/live-blog-vikibell.sublime-project"
+				"C:\\Data\\Sublime Projects\\Personal\\live-blog-vikibell.sublime-project"
 			],
 			[
-				"",
-				"~/Documents/Code/Sublime Projects/supercouth-stories.sublime-project"
+				"rbl",
+				"C:\\Data\\Sublime Projects\\RBL\\MoneyForce\\Build\\build-moneyforce-rbl.sublime-project"
+			],
+			[
+				"health",
+				"C:\\Data\\Sublime Projects\\Health Careers\\Build\\build-healthcareers.sublime-project"
+			],
+			[
+				"bmi",
+				"C:\\Data\\Sublime Projects\\BMI\\Build\\BMI Build.sublime-project"
+			],
+			[
+				"cha",
+				"C:\\Data\\Sublime Projects\\Personal\\charliejackson.sublime-project"
+			],
+			[
+				"occ",
+				"C:\\Data\\Sublime Projects\\OCC\\Build\\OCC-build.sublime-project"
+			],
+			[
+				"hee",
+				"C:\\Data\\Sublime Projects\\HEE-LETB\\build\\build-heeletb.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -573,7 +322,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 334.0,
+	"side_bar_width": 296.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
