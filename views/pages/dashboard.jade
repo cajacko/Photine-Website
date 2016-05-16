@@ -1,0 +1,21 @@
+h1 All logged in
+
+form(action='/action/add-frame', method='POST')
+  h2 Add a Photine frame to your account
+  label Frame ID
+  input(name='frameId', type='text', placeholder='e.g. diuybr8746v9fh8')
+  label Frame Secret
+  input(name='frameSecret', type='text', placeholder='e.g. 98467h589756h867h6')
+  button(type='submit') Submit
+
+
+if frames
+  ul
+    each frame in frames
+        li 
+          span #{frame.frameId}
+          form(action='/action/remove-frame', method='POST')
+            input(name='frameId', value='#{frame.frameId}', type='hidden')
+            button(type='submit') Remove
+else
+  span You do not have any Photine frames yet!

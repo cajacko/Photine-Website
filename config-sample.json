@@ -26,7 +26,8 @@
     "watch": "watch"
   },
   "facebook": {
-    "clientID": "xxxxx",
-    "clientSecret": "xxxxx"
+    "clientID": "xxx",
+    "clientSecret": "xxx",
+    "callback": "/login/facebook"
   }
 }
