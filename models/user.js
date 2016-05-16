@@ -1,20 +1,27 @@
 /**
  * Process all the interactions with the database that involve users
  */
+
 var mongoose = require('mongoose');
 var connection = require('./database');
-
 var Schema = mongoose.Schema;
+var framesModel = require('./frames');
+var Frames = framesModel.frames;
 
 var UserSchema = new Schema({
   firstName: String,
   lastName: String,
   email: {type: String, unique: true},
   facebookId: {type: String, unique: true},
-  displayName: String
+  displayName: String,
+  frames: [{type: Schema.Types.ObjectId, ref: 'Frames'}]
+},
+{
+  timestamps: true
 });
 
 var User = mongoose.model('users', UserSchema);
+exports.user = User;
 
 function registerUser(email, vars, next) {
   // TODO: validate email
@@ -76,10 +83,20 @@ function getUserBy(fields, next) {
         return false;
       }
 
-      next(user);
+      if (user.length) {
+        next(user);
+        return user;
+      } else {
+        next(false);
+        return false;
+      }
     });
   });
 }
+
+exports.getUserBy = function(fields, next) {
+  getUserBy(fields, next);
+};
 
 // Get the current user
 exports.getUser = function(req, next) {
