@@ -29,5 +29,10 @@
     "clientID": "xxx",
     "clientSecret": "xxx",
     "callback": "/login/facebook"
+  },
+  "database": {
+    "host": "xxx",
+    "username": "xxx",
+    "password": "xxx"
   }
 }
