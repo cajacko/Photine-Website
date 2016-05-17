@@ -7,6 +7,7 @@ var connection = require('./database');
 var Schema = mongoose.Schema;
 var userModel = require('./user');
 var User = userModel.user;
+var error = require('../helpers/errors');
 
 var FramesSchema = new Schema({
   frameId: {type: String, unique: true},
@@ -32,57 +33,74 @@ exports.getUserFrames = function(userId, next) {
     ];
     next(frames);
   } else {
-    next(false);
+    next(error(10));
   }
 };
 
 function doesFrameIdAndSecretMatchUp(frameId, frameSecret, next) {
+  var query = {frameId: frameId, frameSecret: frameSecret};
 
+  connection(function() {
+    Frames.findOne(query, function(err, frame) {
+      if (err) {
+        next(error(8, err));
+        return false;
+      }
+
+      if (frame) {
+        next(frame);
+        return frame;
+      } else {
+        next(error(9));
+        return false;
+      }
+    });
+  });
 }
 
 exports.addUserFrame = function(userId, frameId, frameSecret, next) {
-  // Is user valid
-  // Does frameId exist
-  // Is frameId and frameSecret valid
-  // Is frame already associated with user
-  // Add association
-
+  // If the userId, frameId and frameSecret are set
   if (userId && frameId && frameSecret) {
+    // Get the user by facebookID
     userModel.getUserBy({facebookId: userId}, function(user) {
+      // If the user exists
       if (user) {
-        doesFrameIdAndSecretMatchUp(frameId, frameSecret, function(frameUsers) {
-          if (frameUsers) {
-            // TODO: If user is already associated with the frame
-            if (false) {
-              next(false);
-              return false;
-            } else {
+        // Does the frameId and and frameSecret match the records in the database
+        doesFrameIdAndSecretMatchUp(frameId, frameSecret, function(frame) {
+          // If the framId and secret is valid
+          if (frame) {
+            // If the user is not associated with this frame already
+            if (frame.users.indexOf(user._id) == -1) {
               connection(function() {
-                Frames.update(
-                  {frameId: frameId},
-                  {$push: {users: {title: title, msg: msg}}},
-                  function(err, newUser) {
+                Frames.findOneAndUpdate(
+                  {_id: frame._id},
+                  {$push: {users: user._id}},
+                  function(err, frame) {
                     if (err) {
-                      next(false);
+                      next(error(7, err));
                       return false;
                     }
 
-                    next(newUser);
-                });
+                    next(frame.frameId);
+                    return frame.frameId;
+                  });
               });
+            } else {
+              next(error(1));
+              return false;
             }
           } else {
-            next(false);
+            next(error(2));
             return false;
           }
         });
       } else {
-        next(false);
+        next(error(3));
         return false;
       }
     });
   } else {
-    next(false);
+    next(error(4));
     return false;
   }
 };

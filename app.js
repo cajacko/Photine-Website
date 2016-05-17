@@ -61,9 +61,6 @@ passport.deserializeUser(function(obj, cb) {
   cb(null, obj);
 });
 
-
-
-
 // Setup the view engine to use Jade
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

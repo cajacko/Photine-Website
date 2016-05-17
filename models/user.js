@@ -5,16 +5,16 @@
 var mongoose = require('mongoose');
 var connection = require('./database');
 var Schema = mongoose.Schema;
-var framesModel = require('./frames');
-var Frames = framesModel.frames;
+// var framesModel = require('./frames');
+// var Frames = framesModel.frames;
 
 var UserSchema = new Schema({
   firstName: String,
   lastName: String,
   email: {type: String, unique: true},
   facebookId: {type: String, unique: true},
-  displayName: String,
-  frames: [{type: Schema.Types.ObjectId, ref: 'Frames'}]
+  displayName: String //,
+  // frames: [{type: Schema.Types.ObjectId, ref: 'Frames'}]
 },
 {
   timestamps: true
@@ -32,7 +32,7 @@ function registerUser(email, vars, next) {
       userDetails.email = email;
 
       if (vars.id) {
-        userDetails.id = vars.id;
+        userDetails.facebookId = vars.id;
       }
 
       if (vars.name) {
@@ -77,13 +77,13 @@ function getUserBy(fields, next) {
   }
 
   connection(function() {
-    User.find(query, function(err, user) {
+    User.findOne(query, function(err, user) {
       if (err) {
         next(false);
         return false;
       }
 
-      if (user.length) {
+      if (user) {
         next(user);
         return user;
       } else {
