@@ -28,7 +28,7 @@
   "facebook": {
     "clientID": "xxx",
     "clientSecret": "xxx",
-    "callback": "/login/facebook"
+    "callback": "/login/callback/facebook"
   },
   "database": {
     "host": "xxx",

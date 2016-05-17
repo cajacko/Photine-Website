@@ -1,4 +1,4 @@
-h1 All logged in
+h1 Dashboard
 
 form(action='/action/add-frame', method='POST')
   h2 Add a Photine frame to your account
@@ -10,6 +10,7 @@ form(action='/action/add-frame', method='POST')
 
 
 if frames
+  h2 Registered frames
   ul
     each frame in frames
         li 
