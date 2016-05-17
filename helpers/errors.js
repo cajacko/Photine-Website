@@ -37,6 +37,36 @@ module.exports = function(errCode, misc) {
 
   if (errCode) {
     switch (errCode) {
+      case 21:
+        error = defineError(errCode, 'Could not remove the frame/user association', 'Some of the function paramaters are missing or undefined');
+        break;
+      case 20:
+        error = defineError(errCode, 'Could not remove the frame/user association', 'There was an error removing the frame/user association in the database', 'There was an error removing the frame/user association in the database. Check logs for more details.');
+        break;
+      case 19:
+        error = defineError(errCode, 'Could not remove the frame/user association', 'The frame user association does not exist', 'The specified user is not associated with the specified frame.');
+        break;
+      case 18:
+        error = defineError(errCode, 'Could not get users frames', 'The user ID was not defined');
+        break;
+      case 17:
+        error = defineError(errCode, 'Could not get users frames', 'There was an error getting the users frames from the database', 'Something unusual has gone on.');
+        break;
+      case 16:
+        error = defineError(errCode, 'Possibly failed to remove the frame/user association', 'The action was successful but the frame Id was not returned', 'Something unusual has gone on.');
+        break;
+      case 15:
+        error = defineError(errCode, 'Could not remove the frame/user association', 'No data was posted', 'No POST data was sent to the server');
+        break;
+      case 14:
+        error = defineError(errCode, 'Could not remove the frame/user association', 'The user is not signed in');
+        break;
+      case 13:
+        error = defineError(errCode, 'Could not get frame', 'No frame exists for that frame ID');
+        break;
+      case 12:
+        error = defineError(errCode, 'Could not get frame', 'There was an error getting the frame in the database', 'There was an error getting the frame in the database. Check logs for more details.');
+        break;
       case 11:
         error = defineError(errCode, 'Possibly failed to associate frame and user', 'The action was successful but the frame Id was not returned', 'Something unusual has gone on.');
         break;

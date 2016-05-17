@@ -12,8 +12,8 @@ router.get('/', function(req, res) {
   // Get the user/register user if they do not already exist
   User.getUser(req, function(user) {
     // If the request has been successful then redirect to the home page, otherwise return an error
-    if (user) {
-      Frames.getUserFrames(user, function(frames) {
+    if (user && user._id) {
+      Frames.getUserFrames(user._id, function(frames) {
         res.render('pages/dashboard', {frames: frames});
       });
     } else {

@@ -13,8 +13,8 @@ if frames
   ul
     each frame in frames
         li 
-          span #{frame.frameId}
           form(action='/action/remove-frame', method='POST')
+            label #{frame.frameId}
             input(name='frameId', value='#{frame.frameId}', type='hidden')
             button(type='submit') Remove
 else

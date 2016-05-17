@@ -4,25 +4,43 @@
 
 var express = require('express');
 var router = express.Router();
-var passport = require('passport');
 var User = require('../../models/user');
+var Frames = require('../../models/frames');
+var jsonOrRedirect = require('../../helpers/json-or-redirect');
+var redirect = '/dashboard';
 
 // Authenticate any requests to '/login/facebook'
-router.get('/', passport.authenticate('facebook', {scope: ['email'], failureRedirect: '/'}), function(req, res) {
-  // Get the user/register user if they do not already exist
-  User.getUser(req, function(user) {
-    // If the request has been successful then redirect to the home page, otherwise return an error
-    if (user) {
-      res.redirect('/dashboard');
-    } else {
-      // Error saving/logging in user
-      res.render('pages/error', {
-        errorCode: '001',
-        errorTitle: 'Error logging in/registering user',
-        errorMessage: 'Could not register.login the user at this time. Contact Charlie and complain!'
-      });
-    }
-  });
+router.post('/', function(req, res) {
+  if (req.body.frameId) {
+    User.getUser(req, function(user) {
+      if (user) {
+        Frames.removeUserFrame(user._id, req.body.frameId, function(frameId) {
+          if (frameId && frameId.err) {
+            if (frameId.err.errCode) {
+              jsonOrRedirect(req, res, redirect, frameId.err.errCode);
+            } else {
+              jsonOrRedirect(req, res, redirect, true);
+            }
+          } else if (frameId) {
+            var json = {
+              success: true,
+              err: false,
+              frameId: frameId
+            };
+
+            jsonOrRedirect(req, res, redirect, false, json);
+
+          } else {
+            jsonOrRedirect(req, res, redirect, 16);
+          }
+        });
+      } else {
+        jsonOrRedirect(req, res, redirect, 14);
+      }
+    });
+  } else {
+    jsonOrRedirect(req, res, redirect, 15);
+  }
 });
 
 module.exports = router;
