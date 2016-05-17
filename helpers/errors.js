@@ -37,6 +37,24 @@ module.exports = function(errCode, misc) {
 
   if (errCode) {
     switch (errCode) {
+      case 27:
+        error = defineError(errCode, 'Could not get the user', 'There was no field defined to get the user by.');
+        break;
+      case 26:
+        error = defineError(errCode, 'Could not get the user', 'No user was found in the database with the given details');
+        break;
+      case 25:
+        error = defineError(errCode, 'Could not get the user', 'There was a database error whilst getting the user.');
+        break;
+      case 24:
+        error = defineError(errCode, 'Could not get the user', 'There was no field defined to get the user by.');
+        break;
+      case 23:
+        error = defineError(errCode, 'Could not register new user', 'No email for the user was given');
+        break;
+      case 22:
+        error = defineError(errCode, 'Could not register new user', 'There was a database error whilst creating the new user');
+        break;
       case 21:
         error = defineError(errCode, 'Could not remove the frame/user association', 'Some of the function paramaters are missing or undefined');
         break;

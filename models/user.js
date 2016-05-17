@@ -13,8 +13,7 @@ var UserSchema = new Schema({
   lastName: String,
   email: {type: String, unique: true},
   facebookId: {type: String, unique: true},
-  displayName: String //,
-  // frames: [{type: Schema.Types.ObjectId, ref: 'Frames'}]
+  displayName: String
 },
 {
   timestamps: true
@@ -51,14 +50,14 @@ function registerUser(email, vars, next) {
 
       newUser.save(function(err, newUser) {
         if (err) {
-          next(false);
+          next(error(22));
           return false;
         }
 
         next(newUser);
       });
     } else {
-      next(false);
+      next(error(23));
       return false;
     }
   });
@@ -72,14 +71,14 @@ function getUserBy(fields, next) {
   } else if (fields.facebookId) {
     query = {facebookId: fields.facebookId};
   } else {
-    next(false);
+    next(error(24));
     return false;
   }
 
   connection(function() {
     User.findOne(query, function(err, user) {
       if (err) {
-        next(false);
+        next(error(25));
         return false;
       }
 
@@ -87,7 +86,7 @@ function getUserBy(fields, next) {
         next(user);
         return user;
       } else {
-        next(false);
+        next(error(26));
         return false;
       }
     });
@@ -109,7 +108,7 @@ exports.getUser = function(req, next) {
     } else if (req.user._json.id) {
       getUserByField = {facebookId: req.user._json.id};
     } else {
-      next(false);
+      next(error(27));
       return false;
     }
 
@@ -123,7 +122,7 @@ exports.getUser = function(req, next) {
             next(user);
             return user;
           } else {
-            next(false);
+            next(user); // Pass on error
             return false;
           }
         });
